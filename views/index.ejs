@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/852f600385.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook Clone</title>
+</head>
+
+<body>
+    <section class="nav">
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">facebook</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+
+
+                    </ul>
+
+                    <form class="form-inline my-2 my-lg-0" method="POST" action="/login">
+                        <label for="" class="firstlabel">Email or Phone</label>
+                        <input class="form-control mr-sm-2 searchbox1" name="email" type="search" aria-label="Search">
+                        <label for="" class="secondlabel">Password</label>
+                        <input class="form-control mr-sm-2 searchbox2" name="password" type="password" aria-label="Search">
+                         <button class="formbutton" type="submit">Log In</button>
+                        <label class="suggestion" for="">Forgot account?</label>
+
+                    </form>
+
+                </div>
+            </nav>
+        </nav>
+
+    </section>
+
+    <section class="body container">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div>
+                    <h1 style="margin-left: 30px;">Recent Logins</h1>
+                    <p style="margin-left: 30px;">Click your picture or add an account.</p>
+                </div>
+                <div class="cards">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card" style="width: 180px;padding-bottom: 10px;">
+                                <img src="https://st1.bollywoodlife.com/wp-content/uploads/2014/04/59470-shahid-kapoor-in-the-movie-badmaash-company.jpg?impolicy=Medium_Resize&w=1200&h=800"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Shahid Kapoor</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="width: 180px;margin-left:20px;padding-bottom: 0px;">
+                                <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2019/11/13/830075-yami.jpg"
+                                    class="card-img-top" alt="..." height="118px">
+                                <div class="card-body">
+                                    <p class="card-title">Yami Gautam</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2019/11/13/830075-yami.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+
+                </div> -->
+
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <h1>Create a New Account</h1>
+                <p>It's quick and easy</p>
+                <form action="/signup" method="POST">
+                <input type="text" name="firstname" placeholder="First name">
+                <input type="text" name="lastname" placeholder="Last name">
+                <br>
+                <br>
+
+                <input style="padding-right: 190px;height: 40px;" type="text" name="email"
+                    placeholder="Mobile number or email">
+                <br>
+                <br>
+
+                <input style="padding-right: 190px;" type="password" name="password" placeholder="New password">
+            
+
+                <h2 style="font-size: 20px;color: #90949C;">Birthday</h2>
+                <select style="padding-right: 20px;" name="date" id="date">
+                    <option value="Jul">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="Jun">Jun</option>
+                </select>
+
+                <select style="padding-right: 15px;" name="day" id="day">
+                    <option value="10">10</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <select style="padding-right: 15px;" name="year" id="year">
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                </select>
+                <span style="position: relative; bottom: 5px;"><i class="fas fa-question-circle"></i></span>
+
+                <h2 style="font-size: 20px;color: #90949C;">Gender</h2>
+                <div class="checkbox">
+                    <input 1 type="checkbox" name="gender" value="Female">Female
+                    <input type="checkbox" name="gender" value="Male">Male
+
+                    <input type="checkbox" name="gender" value="Custom">Custom
+
+                    <span style="position: relative; bottom: 5px;"><i class="fas fa-question-circle"></i></span>
+                </div>
+                <p class="checkboxpara">By clicking Sign Up, you agree to our <a href="">Terms</a> <a href="">Data</a>
+                    <a href="">Policy</a> and<br><a href="">Cookies</a> <a href="">Policy</a> You may
+                    receive SMS
+                    Notifications from us<br> and can opt out any time</p>
+
+                <div>
+                    <button class="signupbtn" type="submit">Sign Up</button>
+                </div>
+            </form>
+                <hr>
+                <span><a href="">Create a page</a> for a celebrity, brand or business</span>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class=" container">
+       
+        <div class="row">
+            <div class="col-lg-1">
+                <p class="para">English(US)</p>
+            </div>
+            <div class="col-lg-1">
+                <a href="">
+                    <p class="para">नेपाली
+                    </p>
+                </a>
+
+            </div>
+            <div class="col-lg-1">
+                <a href="">
+                    <p class="para">हिन्दी
+                    </p>
+                </a>
+
+            </div>
+            <div class="col-lg-1">
+                <a href="">
+                    <p class="para">Español
+                    </p>
+                </a>
+
+            </div>
+            <div class="col-lg-1">
+                <a href="">
+                    <p class="para">Português 
+                    </p>
+                </a>
+
+            </div>
+            <div class="col-lg-1">
+                <a href="">
+                    <p class="para">Français 
+
+                    </p>
+                </a>
+
+            </div>
+            <div class="col-lg-1">
+
+                <a href="">
+                    <p class="para">日本語
+
+                    </p>
+                </a>
+            </div>
+            <div class="col-lg-1">
+
+                <a href="">
+                    <p class="para">Italiano
+                    </p>
+                    
+                </a>
+            </div>
+            <div class="col-lg-1">
+
+                <a href="">
+                    <p class="para"11>لعربية
+
+                    </p>
+                </a>
+            </div>
+           
+            <hr>
+            <div class="row">
+                <div col-lg-1>
+                    <a href="" class="para2">signup</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Log In</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Messenger</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Facebook Lite</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Watch</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">People</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Pages</a>
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Page Categories</a>
+                    
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Places</a>
+                    
+                </div>
+                <div col-lg-1>
+                    <a href="" class="para2">Games</a>
+                </div>
+                
+            </div>
+
+        </div>
+        <br>
+        <span style="font-size: 10px;margin-left: 20px;">Facebook &copy; 2020</span>
+     
+    </section>
+</body>
+
+</html>

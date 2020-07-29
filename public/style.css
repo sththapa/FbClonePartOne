@@ -1,0 +1,138 @@
+
+/* navbarsection */
+.navbar
+{
+    /* background-color: red !important; */
+    width: 210vh !important;
+    height: 88px;
+    background-color: #3B5998 !important;
+}
+
+.navbar-brand
+{
+   margin-left: 150px;
+   color: #fff !important;
+   font-size:40px;
+   font-weight: bold;
+   margin-top: 18   px;
+   
+}
+/* 
+seacrhboxes */
+.searchbox1
+{
+    margin-left: 100px !important;
+    height: 28px;
+    border-radius: 0%;
+    position: relative;
+    left: 120px;
+   
+}
+.searchbox2
+{
+    margin-left: 120px !important;
+  
+    position: relative;
+    right:50px;
+    height: 28px;
+    border-radius: 0%;
+   
+    
+    
+}
+
+/* labels */
+.firstlabel
+{
+color:#fff;
+position: relative;
+bottom: 28px;
+left: 305px;
+font-size: 13px;
+}
+.secondlabel
+{
+    color: #fff;
+    position: relative;
+    bottom: 28px;
+    left: 125px;
+    font-size: 13px;
+}
+.formbutton
+{
+    background-color:#3B5998;
+    position: relative;
+    right: 40px;
+    color: #fff;
+
+}
+.suggestion
+{
+
+    position: relative;
+    right: 318px;
+    top: 30px;
+    color:#9CB4D8
+
+    
+}
+/* cards */
+.cards
+{
+   
+    margin-left: 32px;
+}
+
+
+body{
+    background-color:#E9EBEE;
+    
+}
+
+.secondsection
+{
+    
+    margin-left: 20px;
+}
+
+/* checkbox */
+.checkbox
+{
+  
+    margin-left: 15px;
+}
+/* checkboxpara */
+.checkboxpara
+{
+    font-size: 10px;
+}
+/* signupbtn */
+.signupbtn
+{
+   padding: 0 40px 0 50px;
+    background-color: #5E934A;
+    color: #fff;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.bottom
+{
+    background-color: #fff;
+}
+
+.para
+{
+    font-size: 12px;
+    padding-top: 50px;
+    margin-left: 35px;
+}
+
+.para2
+{
+    padding: 20px;
+    font-size: 12px;
+    margin-left: 30px;
+}
