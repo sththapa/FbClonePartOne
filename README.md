@@ -1,2 +1,20 @@
 # FbClonePartOne with Nodejs And MongoDb
-This is a facebook clone partone with nodejs and Mongodb
+> Web application built using html/css as a front end along with Nodejs and mongodb as backend wiht authoriaztion
+
+# Application Screenshots
+<img src="fg.png"/>
+# Tools used
+
+* BootStrap
+<img src="bootstrap.png"/>
+
+* Nodejs
+<img src="node.png"/>
+
+* MongoDB
+<img src="mongo.png"/>
+
+> ©️ Santosh Thapa
+
+
+
