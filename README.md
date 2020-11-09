@@ -2,7 +2,7 @@
 > Web application built using html/css as a front end along with Nodejs and mongodb as backend wiht authoriaztion
 
 # Application Screenshots
-<img src="fg.png"/>
+<img src="fb.png"/>
 # Tools used
 
 * BootStrap
